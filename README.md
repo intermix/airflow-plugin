@@ -2,9 +2,22 @@
 
 ## Introduction
 
-The Intermix.io Airflow plugin is used to annotate Postgres and Redshift queries being executed with a comment
-that contains metadata about the query itself. This does not slow down query execution and is used to provide richer
-data inside our analytics service.
+The [intermix.io](http://intermix.io) Airflow plugin surfaces important information about the performance Airflow DAGs and Tasks.
+
+The plugin will automatically annotate SQL queries executed by Airflow via the Postgres or Redshift operator. 
+The queries are annotated with the intermix.io - Tagging Specification. Tagging your SQL allows you to leverage 
+the intermix.io App Tracing suite of tools.
+
+The plugin works by  prepending the query with a SQL comment containing metadata about 
+the query itself (Airflow DAG, task, user, etc). This does not slow down query execution or affect 
+the logical execution of the code. It is used to provide data inside our analytics service. 
+
+
+[Read more about App Tracing here.
+](https://docs.intermix.io/hc/en-us/articles/360004361073-intermix-io-App-Tracing-Guide)
+
+
+
 
 
 ## Installation
@@ -21,18 +34,11 @@ For questions and support please contact support@intermix.io.
 
 If you're looking to contribute, please contact us at support@intermix.io.
 
-## About Intermix
+## About intermix.io
 
-intermix.io ([http://intermix.io](http://intermix.io)) is a product that instruments Amazon Redshift to provide 
-performance analytics. It helps Redshift adminstrators to:
+[intermix.io](http://intermix.io) is a intermix.io is a single monitoring dashboard for data engineers to keep an eye on 
+their monitor mission-critical data flows.
 
-- optimize WLM to maximize throughput and memory utilization
-- monitor user behavior (ad hoc queries, batch jobs, etc.)
-- root cause analysis of issues impacting your cluster
-- predict storage growth and deep visilibty into storage utilization
-- optimize dist and sort keys
-
-We offer a free trial and procurement via [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B0764JGX86?qid=1513291438437&sr=0-2&ref_=srh_res_product_title).
 
 ## License
 

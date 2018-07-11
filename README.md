@@ -32,7 +32,7 @@ The plugin will automatically annotate SQL queries executed by Airflow via **_Po
 
 In addition, there is lightweight support for PostgresHook methods _**get_first, get_records,**_ and _**run**_.  If you are using these methods,
 the plugin will retrieve the file name, line of code, and class name. An attempt will be made to retrieve the DAG and 
-TAsk name as well.
+Task name as well.
 
 However, if you are using **_PostgresHook_**, we recommend using the [intermix.io Python Plugin](https://docs.intermix.io/hc/en-us/articles/360004408853-intermix-io-Python-Plugin) to explicitly pass in
 the DAG and Task name explicitly.

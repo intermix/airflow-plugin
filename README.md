@@ -35,7 +35,7 @@ the plugin will retrieve the file name, line of code, and class name. An attempt
 Task name as well.
 
 However, if you are using **_PostgresHook_**, we recommend using the [intermix.io Python Plugin](https://docs.intermix.io/hc/en-us/articles/360004408853-intermix-io-Python-Plugin) to explicitly pass in
-the DAG and Task name explicitly.
+the DAG and Task name.
 
 
 [See this link for intermix.io Python Plugin installation and use.](https://docs.intermix.io/hc/en-us/articles/360004408853-intermix-io-Python-Plugin)
@@ -56,8 +56,8 @@ If you're looking to contribute, please contact us at support@intermix.io.
 
 ## About intermix.io
 
-[intermix.io](http://intermix.io) is a intermix.io is a single monitoring dashboard for data engineers to keep an eye on 
-their monitor mission-critical data flows.
+[intermix.io](http://intermix.io) is a single monitoring dashboard for data engineers to keep an eye on 
+their mission-critical data flows.
 
 
 ## License

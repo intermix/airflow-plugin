@@ -43,7 +43,11 @@ the DAG and Task name.
 
 ## Compatibility
 
-This plugin has been tested on Python version 2.7.x. 
+This plugin has been tested on: 
+
+Airflow versions > 1.1.0
+ 
+Python version 2.7.x. 
 
 
 ## Questions & Support

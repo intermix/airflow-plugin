@@ -62,9 +62,10 @@ def do_setup():
         name='intermix-airflow-plugin',
         description='Plugin to add Intermix enrichment to Airflow',
         license='MIT License',
-        version='0.2',
-        scripts=['intermix.py'],
-        zip_safe=True,
+        version='0.4',
+        py_modules=['intermix', 'tests'],
+        # Not zip safe to allow introspection and loading by Airflow plugin manager
+        zip_safe=False,
         classifiers=[
             'Development Status :: 5 - Production/Stable',
             'Environment :: Console',
@@ -72,6 +73,9 @@ def do_setup():
             'Intended Audience :: System Administrators',
             'Programming Language :: Python :: 2.7',
             'Programming Language :: Python :: 3.4',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+            'Programming Language :: Python :: 3.7',
             'Topic :: System :: Monitoring',
         ],
         author='Intermix Software',

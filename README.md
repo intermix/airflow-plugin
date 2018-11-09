@@ -45,9 +45,10 @@ the DAG and Task name.
 
 This plugin has been tested on:
 
-Airflow versions > 1.1.0
-
+Airflow versions 1.1.0
+Airflow versions 1.9.0
 Python version 2.7.x.
+Python version 3.6.x.
 
 
 ## Questions & Support
